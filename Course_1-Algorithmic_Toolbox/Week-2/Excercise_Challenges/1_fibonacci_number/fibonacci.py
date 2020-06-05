@@ -13,6 +13,10 @@ def fib_fast(n):
 
     return F[n]
 
+def fib_math(n):
+    golden_ration = (1 + 5 ** 0.5) / 2
+    return int((golden_ration ** n + 1) / 5 ** 0.5)
+
 if __name__ == '__main__':
     n = int(input())
-    print(fib_fast(n))
+    print(fib_math(n))
